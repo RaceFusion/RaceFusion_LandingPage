@@ -157,6 +157,7 @@ body {
 }
 
 #services-cards .card-bg {
+	
   background: rgba(0, 0, 0, 0.5); /* Fondo blanco semi-transparente */
   border: none;
   border-radius: 50px; /* Ovalado */
