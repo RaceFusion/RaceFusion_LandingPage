@@ -16,6 +16,7 @@ function getCurrentSection() {
 }
 
 function highlightCurrentSection() {
+	
 	const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
 	navLinks.forEach((link) => {
