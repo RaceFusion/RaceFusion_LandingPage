@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="KartPro" />
+    <meta name="description" content="Optimiza el rendimiento de tus karts con KartPro, una plataforma avanzada de monitoreo en tiempo real y análisis post-carrera utilizando inteligencia artificial." />
+    <meta name="keywords" content="karting, monitoreo de karts, análisis de rendimiento, inteligencia artificial, telemetría en tiempo real, competición de karts" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="Spanish" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="author" content="RaceFusion Startup" />
+    <!-- TITLE -->
+    <title>KartPro</title>
+    <!-- LINKS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center h1 fw-bold" href="#">
+          <img
+            src="logo.png"
+            alt="logo"
+            width="90"
+            height="90"
+            class="d-inline-block align-text-top"
+          />
+          KartPro
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Quiénes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#collaborators">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#download">Descargar</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Idioma
+              </a>
+              <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                <a class="dropdown-item" href="indexEN.html">Inglés</a>
+                <a class="dropdown-item" href="index.html">Español</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="hero" id="home">
+      <div class="content justify-content-center text-center">
+        <h1 class="text-white">
+          <span class="fw-bold level-2-title"> 
+            <p>Bienvenido a KartPro:</p> 
+            <p>Revoluciona tu Experiencia de</p>
+            <p>Karting con Tecnología Avanzada</p>
+          </span> 
+            
+          <p>Descubre cómo los datos en tiempo real y la</p>
+          <p>inteligencia artificial pueden optimizar el</p>
+          <p>rendimiento en cada vuelta.</p>
+        </h1>
+        <button class="btn btn-light" onclick="window.location.href=''">Saber más</button>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section class="p-5" id="services">
+      <div class="container py-5">
+        <h1 class="text-center mb-5 level-1-title fw-bold">
+          Nuestros servicios
+        </h1>
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card p-5 h-100">
+              <div class="card-body text-center d-flex flex-column">
+                <div class="h1 mb-3">
+                  <i class="fa-solid fa-wifi" style="color: rgb(33,164,187)"></i>
+                </div>
+                <h2 class="level-2-title card-title mb-3">
+                  Monitoreo en Tiempo Real
+                </h2>
+                <p class="card-text paragraph lead flex-grow-1">
+                  Mejora el rendimiento de tu equipo de karting con datos precisos en tiempo real directamente en tu dispositivo.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="card p-5 h-100">
+              <div class="card-body text-center d-flex flex-column">
+                <div class="h1 mb-3">
+                  <i class="fa-solid fa-mouse-pointer" style="color: rgb(33,164,187)"></i>
+                </div>
+                <h2 class="level-2-title card-title mb-3">
+                  Análisis Avanzados
+                </h2>
+                <p class="card-text paragraph lead flex-grow-1">
+                  Obtén informes detallados de cada carrera. Desde el desgaste de los componentes hasta la eficiencia de la estrategia de conducción.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="card p-5 h-100">
+              <div class="card-body text-center d-flex flex-column">
+                <div class="h1 mb-3">
+                  <i class="fa-solid fa-globe" style="color: rgb(33,164,187)"></i>
+                </div>
+                <h2 class="level-2-title card-title mb-3">
+                  Comunidad de Kartistas
+                </h2>
+                <p class="card-text paragraph lead flex-grow-1">
+                  Únete a una comunidad activa de pilotos y equipos de todo el mundo. Comparte experiencias, estrategias y mejora tu rendimiento colaborando con los mejores.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1></h1>
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card p-5 h-100">
+              <div class="card-body text-center d-flex flex-column">
+                <div class="h1 mb-3">
+                  <i class="fa-solid fa-shield" style="color: rgb(33,164,187)"></i>
+                </div>
+                <h2 class="level-2-title card-title mb-3">
+                  La Revolución del Karting
+                </h2>
+                <p class="card-text paragraph lead flex-grow-1">
+                  Transforma tu enfoque en las carreras con soluciones inteligentes y sostenibles. Lleva tu rendimiento al
+                  siguiente nivel con la precisión que solo los datos pueden ofrecer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="bg-light p-5" id="about">
+      <div class="container py-5">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md">
+            <a href="#">
+              <img
+                class="img-fluid img-thumbnail"
+                src="business.jpg"
+                alt="imagen que representa a una empresa"
+              />
+            </a>
+          </div>
+          <div class="col-md p-5">
+            <h1 class="level-1-title fw-bold">¿Quiénes somos?</h1>
+            <p class="paragraph lead">
+              En RaceFusion, nacimos de la pasión por la tecnología y
+              la competición de karting. Nuestra misión es
+              proporcionarte herramientas innovadoras, como
+              KartPro, para optimizar tu rendimiento en cada carrera
+              mediante el análisis de datos en tiempo real. Desde
+              pilotos amateurs hasta equipos profesionales, estamos
+              aquí para apoyarte en tu camino hacia el éxito en las
+              pistas.
+              Únete a nosotros mientras transformamos el mundo del
+              karting con tecnologia avanzada y una comunidad que
+              comparte nuestra visión de un futuro más competitivo e
+              inteligente.
+            </p>
+            <p class="paragraph lead">
+              Únete a nosotros mientras transformamos el mundo del
+              karting con tecnologia avanzada y una comunidad que
+              comparte nuestra visión de un futuro más competitivo e
+              inteligente.            </p>
+            <a href="#" class="btn btn-success mt-3 " id="a1" >
+              Leer más <i class="fa-solid fa-chevron-right" ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="bg-black p-5" id="collaborators">
+      <div class="container py-5">
+        <h1 class="text-center level-1-title-white fw-bold">Testimonios</h1>
+
+        <p class="lead text-center text-white mb-5 paragraph">
+          Esto es lo que nuestros clientes opinan de nosotros 
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="card bg-light flex-fill">
+              <div class="card-body text-center d-flex flex-column p-5">
+                <img class="img-fluid img-thumbnail mb-3" src="persona1.jpg" alt="foto de Ana García"/>
+                <h3 class="card-title mb-3 level-2-title fw-bold">Miguel García</h3>
+                <h4 class="card-subtitle mb-3">Jefe Técnico de Equipo</h4>
+                <h2>
+                  <i class="fa-solid fa-star" style="color: #FFD700;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD700;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD700;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD700;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD700;"></i>
+                </h2>
+                <p class="card-text paragraph flex-grow-1">
+                  "Como jefe técnico, necesito
+                  soluciones que sean precisas y
+                  fáciles de implementar. KartPro no
+                  solo me proporciona datos
+                  detallados sobre el rendimiento del
+                  kart, sino que también me permite
+                  tomar decisiones informadas
+                  rápidamente. No podriamos estar
+                  más satisfechos."                
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="card bg-light flex-fill">
+              <div class="card-body text-center d-flex flex-column p-5">
+                <img class="img-fluid img-thumbnail mb-3" src="persona2.jpg" alt="foto de Luis Pérez"/>
+                <h3 class="card-title mb-3 level-2-title fw-bold">Luis Pérez</h3>
+                <h4 class="card-subtitle mb-3">Piloto Amateur</h4>
+                <h2>
+                  <i class="fa-solid fa-star" style="color: #FFD700;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD700;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD700;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD700;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD700;"></i>
+                </h2>
+                <p class="card-text paragraph flex-grow-1">
+                  "Desde que comencé a usar KartPro,
+                  mis tiempos en pista han mejorado
+                  significativamente. Los datos en
+                  tiempo real me permiten ajustar mi
+                  estrategia en cada vuelta, dándome
+                  una ventaja competitiva que antes
+                  no tenía."           
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="card bg-light flex-fill">
+              <div class="card-body text-center d-flex flex-column p-5">
+                <img class="img-fluid img-thumbnail mb-3" src="persona3.jpg" alt="foto de Marta Rodríguez"/>
+                <h3 class="card-title mb-3 level-2-title fw-bold">Martin Rodríguez</h3>
+                <h4 class="card-subtitle mb-3">Piloto Profesional</h4>
+                <h2>
+                  <i class="fa-solid fa-star" style="color: #FFD700;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD700;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD700;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD700;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD700;"></i>
+                </h2>
+                <p class="card-text paragraph flex-grow-1">
+                  "Para mí, KartPro ha sido un
+                  verdadero cambio de juego. La
+                  precisión en el análisis y las
+                  recomendaciones automáticas me
+                  ayudan a optimizar cada aspecto de
+                  mi conducción. ¡Es como tener un
+                  equipo de ingenieros conmigo en
+                  todo momento!"                
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOAD -->
+    <section class="p-5 bg-light" id="download">
+      <div class="container py-5">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md">
+            <a href="#">
+              <img
+                class="img-fluid img-thumbnail"
+                src="download.jpg"
+                alt="imagen que representa una descarga"
+              />
+            </a>
+          </div>
+          <div class="col-md p-5">
+            <h1 class="level-1-title fw-bold">Obtén nuestra aplicación</h1>
+            <p class="paragraph lead">
+              ¡Lleva la tecnología de competición contigo! Descarga
+              KartPro y revoluciona tu experiencia en el mundo del
+              karting. Accede a datos en tiempo real, análisis
+              avanzados y optimiza tu rendimiento en cada carrera,
+              todo desde la palma de tu mano. Únete a una
+              comunidad de pilotos y equipos que están llevando su
+              rendimiento al siguiente nivel con la ayuda de KartPro.
+            </p>
+
+            <div class="row align-items-center justify-content-center">
+              <div class="col-md-6 col-lg-6 mb-3">
+                <a href="#">
+                  <img
+                    class="img-fluid"
+                    src="google-play-badge.png"
+                    alt="Disponible en Google Play"
+                    width="70%"
+                  />
+                </a>
+              </div>
+
+              <div class="col-md-6 col-lg-6 mb-3">
+                <a href="#">
+                  <img
+                    class="img-fluid"
+                    src="app-store-badge.png"
+                    alt="Disponible en App Store"
+                    width="70%"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- PORTAFOLIO -->
+
+    <!-- FOOTER -->
+    <footer
+      class="page-footer p-5 text-md-left bg-dark text-white"
+      id="contact"
+    >
+      <div class="container py-5">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <h1
+              class="text-uppercase font-weight-bold mb-4 level-1-title-white fw-bold"
+            >
+              RaceFusion
+            </h1>
+            <p class="text-white paragraph">
+              Mantente conectado con
+              RaceFusion y sigue las últimas
+              novedades en tecnología para
+              karting.            </p>
+            <a href="#"
+              ><i class="fa-brands fa-facebook text-dark mx-1 lead"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-linkedin text-dark mx-1 lead"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-twitter text-dark mx-1 lead"></i
+            ></a>
+          </div>
+
+          <div class="col-lg-2 col-md-2 mx-auto">
+            <h5 class="text-uppercase font-weight-bold mb-4">
+              Nuestras redes sociales
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-1">
+                <a href="#"
+                  ><i class="fa-brands fa-facebook mx-1 lead text-white"> </i
+                  >Facebook</a
+                >
+              </li>
+              <li class="mb-1">
+                <a href="#"
+                  ><i class="fa-brands fa-instagram mx-1 lead text-white"> </i
+                  >Instagram</a
+                >
+              </li>
+              <li class="mb-1">
+                <a href="#"
+                  ><i class="fa-brands fa-tiktok mx-1 lead text-white"> </i
+                  >TikTok</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-xs-12 location">
+            <h5 class="text-uppercase font-weight-bold mb-4" >Contacto</h5>
+            <p class="d-flex align-items-center">
+              <i class="fa-solid fa-location-dot text-success mx-2 lead" ></i>
+              Lima 5321, Perú
+            </p>
+            <p class="d-flex align-items-center">
+              <i class="fa-solid fa-phone text-success mx-2 lead"></i> (+51) 987 654 321
+            </p>
+            <p class="d-flex align-items-center">
+              <i class="fa-solid fa-envelope text-success mx-2 lead"></i>
+              info@racefusion.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">© 2024 KartPro S.A.C. Todos los derechos reservados.</div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
