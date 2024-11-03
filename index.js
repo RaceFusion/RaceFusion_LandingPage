@@ -1,4 +1,3 @@
-//se obtiene la sección actual basada en el desplazamiento de la página
 function getCurrentSection() {
 	const sections = document.querySelectorAll("section");
 	let currentSection = "";
@@ -16,7 +15,6 @@ function getCurrentSection() {
 	return currentSection;
 }
 
-//se resalta el enlace del navbar correspondiente a la sección actual
 function highlightCurrentSection() {
 	const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
@@ -31,5 +29,4 @@ function highlightCurrentSection() {
 	});
 }
 
-//se escucha el evento de desplazamiento de la página y resalta la sección actual
 window.addEventListener("scroll", highlightCurrentSection);
